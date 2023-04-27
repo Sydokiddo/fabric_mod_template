@@ -6,20 +6,20 @@
   "name": "Example Mod",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Me!"
+    "Sydokiddo"
   ],
-  "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
-  },
-
-  "license": "CC0-1.0",
+  "contact": {},
+  "license": "MIT",
   "icon": "assets/modid/icon.png",
-
+  "accessWidener": "modid.accesswidener",
   "environment": "*",
+
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.sydokiddo.example.Mod"
+    ],
+    "client": [
+      "net.sydokiddo.example.client.ModClient"
     ]
   },
   "mixins": [
@@ -27,12 +27,14 @@
   ],
 
   "depends": {
-    "fabricloader": ">=0.14.17",
+    "fabricloader": ">=0.14.19",
     "fabric-api": "*",
     "minecraft": "~1.19.4",
     "java": ">=17"
   },
   "suggests": {
     "another-mod": "*"
-  }
+  },
+  "breaks": {},
+  "custom": {}
 }
